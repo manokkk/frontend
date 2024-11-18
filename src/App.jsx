@@ -60,14 +60,14 @@ function AuthPage({ isLogin }) {
           {isLogin ? (
             <>
               Don't have an account?{' '}
-              <Link href="https://backend-ri6n.onrender.com/signup" style={{ textDecoration: 'none', color: '#3f51b5' }}>
+              <Link href="https://vulnerabot.onrender.com/signup" style={{ textDecoration: 'none', color: '#3f51b5' }}>
                 Sign Up
               </Link>
             </>
           ) : (
             <>
               Already have an account?{' '}
-              <Link href="/login" style={{ textDecoration: 'none', color: '#3f51b5' }}>
+              <Link href="https://vulnerabot.onrender.com/login" style={{ textDecoration: 'none', color: '#3f51b5' }}>
                 Login
               </Link>
             </>
