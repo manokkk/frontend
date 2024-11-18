@@ -1,7 +1,6 @@
-// src/App.jsx
 import React from 'react';
-import { Box, CssBaseline, Typography, Link } from '@mui/material';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { Box, CssBaseline, Typography } from '@mui/material';
+import { BrowserRouter as Router, Route, Routes, Navigate, Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 // Importing Components
 import Navbar from './Components/navbar';
@@ -12,8 +11,6 @@ import Login from './Components/login';
 import SignUp from './Components/signup';
 import Contact from './Components/contact';
 import ResultsPanel from './resultsPanel';
-
-
 
 function App() {
   return (
@@ -43,7 +40,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/scan-settings" element={<ScanSettings />} />
             <Route path="/results" element={<ResultsPanel />} />
-
           </Routes>
         </Box>
       </Box>
@@ -60,14 +56,14 @@ function AuthPage({ isLogin }) {
           {isLogin ? (
             <>
               Don't have an account?{' '}
-              <Link href="https://vulnerabot.onrender.com/signup" style={{ textDecoration: 'none', color: '#3f51b5' }}>
+              <Link to="/signup" style={{ textDecoration: 'none', color: '#3f51b5' }}>
                 Sign Up
               </Link>
             </>
           ) : (
             <>
               Already have an account?{' '}
-              <Link href="https://vulnerabot.onrender.com/login" style={{ textDecoration: 'none', color: '#3f51b5' }}>
+              <Link to="/login" style={{ textDecoration: 'none', color: '#3f51b5' }}>
                 Login
               </Link>
             </>
