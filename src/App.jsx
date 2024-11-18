@@ -32,7 +32,7 @@ function App() {
         >
           <Routes>
             {/* Default route - redirect to login page */}
-            <Route path="/" element={<Navigate to="/login" />} />
+            <Route path="/" element={<Login />} />
             <Route path="/login" element={<AuthPage isLogin={true} />} />
             <Route path="/signup" element={<AuthPage isLogin={false} />} />
             <Route path="/home" element={<Home />} />
