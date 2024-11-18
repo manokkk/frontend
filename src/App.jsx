@@ -8,7 +8,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/about';
 import ScanSettings from './Components/scanSettingsPanel';
-import Results from './Components/resultsPanel';
+import ResultsPanel from './Components/ResultsPanel';
 import Login from './Components/login';
 import SignUp from './Components/signup';
 import Contact from './Components/contact';
@@ -41,7 +41,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/scan-settings" element={<ScanSettings />} />
-            <Route path="/results" element={<Results />} />
+            <Route path="/results" element={<ResultsPanel />} />
 
           </Routes>
         </Box>
