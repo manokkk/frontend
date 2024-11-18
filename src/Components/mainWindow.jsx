@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Toolbar, Container } from '@mui/material';
 import NavigationPanel from './navigationPanel';
 import ScanSettingsPanel from './scanSettingsPanel';
-import ResultsPanel from './resultsPanel';
+import ResultsPanel from '../resultsPanel';
 
 function MainWindow() {
   return (
