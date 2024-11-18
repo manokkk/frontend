@@ -19,8 +19,8 @@ const Sidebar = () => {
     >
       <Box sx={{ padding: 2 }}>
         <Button component={Link} to="/" fullWidth>Home</Button>
-        <Button component={Link} to="/scan-settings" fullWidth>Scan Settings</Button>
-        <Button component={Link} to="/results" fullWidth>Scan Results</Button>
+        <Button component={Link} to="https://backend-ri6n.onrender.com/scan-settings" fullWidth>Scan Settings</Button>
+        <Button component={Link} to="https://backend-ri6n.onrender.com/results" fullWidth>Scan Results</Button>
       </Box>
     </Drawer>
   );

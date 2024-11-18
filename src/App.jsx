@@ -36,13 +36,13 @@ function App() {
           <Routes>
             {/* Default route - redirect to login page */}
             <Route path="/" element={<Navigate to="/login" />} />
-            <Route path="/login" element={<AuthPage isLogin={true} />} />
-            <Route path="/signup" element={<AuthPage isLogin={false} />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/scan-settings" element={<ScanSettings />} />
-            <Route path="/results" element={<ResultsPanel />} />
+            <Route path="https://backend-ri6n.onrender.com/login" element={<AuthPage isLogin={true} />} />
+            <Route path="https://backend-ri6n.onrender.com/signup" element={<AuthPage isLogin={false} />} />
+            <Route path="https://backend-ri6n.onrender.com/home" element={<Home />} />
+            <Route path="https://backend-ri6n.onrender.com/about" element={<About />} />
+            <Route path="https://backend-ri6n.onrender.com/contact" element={<Contact />} />
+            <Route path="https://backend-ri6n.onrender.com/scan-settings" element={<ScanSettings />} />
+            <Route path="https://backend-ri6n.onrender.com/results" element={<ResultsPanel />} />
 
           </Routes>
         </Box>

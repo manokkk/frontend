@@ -8,7 +8,7 @@ function NavigationPanel() {
       <ListItem button component={Link} to="/scan-settings">
         <ListItemText primary="Scan Configuration" />
       </ListItem>
-      <ListItem button component={Link} to="/results">
+      <ListItem button component={Link} to="https://backend-ri6n.onrender.com//results">
         <ListItemText primary="Results" />
       </ListItem>
       <ListItem button>

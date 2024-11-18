@@ -35,7 +35,7 @@ const Navbar = ({ user, handleLogout }) => {
             {/* Login/Logout Button */}
             <div className="auth-button">
                 {!user ? (
-                    <Link to='/login'>
+                    <Link to='https://backend-ri6n.onrender.com/login'>
                         <Button variant="contained" color="primary" sx={{ borderRadius: '20px' }}>
                             Login
                         </Button>

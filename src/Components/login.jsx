@@ -17,7 +17,7 @@ const Login = () => {
 
     try {
       // Send POST request to Django login endpoint
-      const response = await axios.post('http://127.0.0.1:8000/api/auth/login/', { email, password });
+      const response = await axios.post('https://backend-ri6n.onrender.com/api/auth/login/', { email, password });
 
       // Check if response is valid and store tokens in localStorage
       if (response.data.access && response.data.refresh) {
