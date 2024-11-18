@@ -8,7 +8,7 @@ import Navbar from './Components/navbar';
 import Home from './Components/home';
 import About from './Components/about';
 import ScanSettings from './Components/scanSettingsPanel';
-import ResultsPanel from './Components/ResultsPanel';
+import ResultsPanel from './Components/resultsPanel';
 import Login from './Components/login';
 import SignUp from './Components/signup';
 import Contact from './Components/contact';
