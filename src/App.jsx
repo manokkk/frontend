@@ -5,13 +5,13 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 
 // Importing Components
 import Navbar from './Components/navbar.jsx';
-import Home from './Components/Home';
-import About from './Components/about';
-import ScanSettings from './Components/scanSettingsPanel';
-import ResultsPanel from './Components/ResultsPanel';
-import Login from './Components/login';
-import SignUp from './Components/signup';
-import Contact from './Components/contact';
+import Home from './Components/Home.jsx';
+import About from './Components/about.jsx';
+import ScanSettings from './Components/scanSettingsPanel.jsx';
+import ResultsPanel from './Components/ResultsPanel.jsx';
+import Login from './Components/login.jsx';
+import SignUp from './Components/signup.jsx';
+import Contact from './Components/contact.jsx';
 
 
 function App() {
