@@ -29,7 +29,7 @@ const ScanSettings = () => {
   const initiateScan = async (domain) => {
     setLoading(true); // Start loading
     try {
-      const response = await axios.post('http://127.0.0.1:8000/api/scan/', {
+      const response = await axios.post('https://backend-1-fwes.onrender.com/api/scan/', {
         domain: domain, // Send domain to backend
       });
 
