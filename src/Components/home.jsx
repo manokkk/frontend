@@ -1,9 +1,9 @@
-// src/components/Home.jsx
 import React from 'react';
-import { Grid, Paper, Typography, Button, Card, CardContent, CardActions } from '@mui/material';
+import { Grid, Paper, Typography, Button, Card, CardContent } from '@mui/material';
 import SecurityIcon from '@mui/icons-material/Security';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import InsightsIcon from '@mui/icons-material/Insights';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Home = () => {
   return (
@@ -25,14 +25,15 @@ const Home = () => {
           <Typography variant="h6" sx={{ marginTop: 2, maxWidth: '600px', margin: '0 auto' }}>
             Uncover hidden risks in your website! Scan for open ports, weak SSL configurations, outdated protocols, and more.
           </Typography>
-          <Button
-            variant="contained"
-            color="secondary"
-            sx={{ marginTop: 3 }}
-            href="/scan-settings"
-          >
-            Start Your Free Scan
-          </Button>
+          <Link to="/scan-settings"> {/* Using Link to navigate */}
+            <Button
+              variant="contained"
+              color="secondary"
+              sx={{ marginTop: 3 }}
+            >
+              Start Your Free Scan
+            </Button>
+          </Link>
         </Paper>
       </Grid>
 
@@ -104,14 +105,15 @@ const Home = () => {
           <Typography variant="body1" sx={{ marginTop: 1 }}>
             Start scanning now and protect your website from potential threats.
           </Typography>
-          <Button
-            variant="contained"
-            color="secondary"
-            sx={{ marginTop: 3 }}
-            href="/scan-settings"
-          >
-            Begin Scan
-          </Button>
+          <Link to="/scan-settings"> {/* Using Link to navigate */}
+            <Button
+              variant="contained"
+              color="secondary"
+              sx={{ marginTop: 3 }}
+            >
+              Begin Scan
+            </Button>
+          </Link>
         </Paper>
       </Grid>
     </Grid>
