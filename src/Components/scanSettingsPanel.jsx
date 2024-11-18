@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Grid, Paper, Typography, Button, Box, TextField } from '@mui/material';
 import axios from 'axios'; // Import axios for making HTTP requests
-import ResultsPanel from './ResultsPanel'; // Import ResultsPanel to show scan results
+import ResultsPanel from '../resultsPanel'; // Import ResultsPanel to show scan results
 import '../Css/scanner.css'; // Import CSS file
 
 const ScanSettings = () => {
