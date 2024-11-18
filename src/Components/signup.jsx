@@ -37,7 +37,7 @@ const SignUp = () => {
       };
 
       console.log('Submitting:', payload); // Log payload for debugging
-      const response = await axios.post('https://backend-ri6n.onrender.com/api/auth/register/', payload);
+      const response = await axios.post('https://backend-1-fwes.onrender.com/api/auth/register/', payload);
 
       // On successful response
       setSuccessMessage('User registered successfully!');
