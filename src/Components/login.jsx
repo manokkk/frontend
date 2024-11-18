@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { TextField, Button, Typography, Box, Paper } from '@mui/material';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../Css/auth.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const navigate = useNavigate(); // Initialize the navigate function
 
   const handleLogin = async () => {
     setError('');
@@ -25,8 +27,8 @@ const Login = () => {
         localStorage.setItem('access_token', response.data.access);
         localStorage.setItem('refresh_token', response.data.refresh);
 
-        // Redirect to dashboard or another page
-        window.location.href = 'home'; // Update with your desired route
+        // Navigate to the home page using React Router
+        navigate('/home'); // Navigate to home page after successful login
       } else {
         setError("Failed to login. Please try again.");
       }
