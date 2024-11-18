@@ -4,7 +4,7 @@ import { Box, CssBaseline, Typography, Link } from '@mui/material';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 
 // Importing Components
-import Navbar from './Components/Navbar';
+import Navbar from './Components/navbar.jsx';
 import Home from './Components/Home';
 import About from './Components/about';
 import ScanSettings from './Components/scanSettingsPanel';
